@@ -1,0 +1,152 @@
+/* background-color: #0D1A26; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: [row-start] 50px [row-end] 100vh;
+    grid-template-areas: 
+        "header header"
+        "portada informacion"
+    ;
+
+    background-color: #0D1A26;
+
+
+
+
+}
+
+
+
+.container>*{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.header{
+    grid-area: header;
+
+
+    background-color: #1C3750;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+.header-titulo{
+    font-size: 2em;
+    font-weight: bold;
+    color: #DEF4E3;
+
+}
+
+.header-buscador{
+    border-radius: 10px;
+    border: none;
+    background-color: #DEF4E3;
+
+    padding: 10px 20px;
+    
+}
+.fa-search{
+    color: #DEF4E3;
+    margin-left: 10px;
+}
+
+
+
+.header-nav__gList{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+
+.nav-list{
+    margin: 0px 10px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #DEF4E3;
+}
+
+.nav-list a:hover{
+    color: yellow;
+}
+
+
+span{
+    color: #6791DF;
+}
+
+
+.portada{
+    grid-area: portada;
+    background: url(../img/img-anime.png);
+    background-repeat: no-repeat;
+    background: cover;
+}
+
+
+
+
+.informacion{
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    grid-area: informacion;
+    color: #DEF4E3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.informacion>*{
+    margin: 25px 0;
+}
+
+
+
+.img-telegram{
+    font-size: 5em;
+    
+}
+.img-telegram:hover{
+    color: tomato;
+}
+
+.img-telegram:nth-child(2){
+    margin-top: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    
+
+}
+
+
+.portada-icono:hover{
+    padding: 20px;
+    
+    border-radius: 15px;
+    color: black;
+
+    background: #B4C1CD;
+    
+    transition: 0.5s;
+}
+
+.boton-enlace{
+    color: white;
+}
